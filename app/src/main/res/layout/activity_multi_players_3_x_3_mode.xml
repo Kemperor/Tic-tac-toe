@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.example.android.tic_tac_toe.twoplayers.MultiPlayersEasyModeActivity">
+
+    <TextView
+        android:id="@+id/multiPlayersX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/x"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/multiPlayersO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/o"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/multiPlayersEasyScoreCounterForX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/score_board"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="@color/green"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/multiPlayersX"
+        app:layout_constraintStart_toStartOf="@+id/multiPlayersX"
+        app:layout_constraintTop_toBottomOf="@+id/multiPlayersX" />
+
+    <TextView
+        android:id="@+id/multiPlayersEasyScoreCounterForO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/score_board"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="@color/blue"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/multiPlayersO"
+        app:layout_constraintStart_toStartOf="@+id/multiPlayersO"
+        app:layout_constraintTop_toBottomOf="@+id/multiPlayersO" />
+
+    <TextView
+        android:id="@+id/multiPlayersEasyTurn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="114dp"
+        android:background="@drawable/board"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:text="X turn"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@+id/multiPlayersEasyScoreCounterForO"
+        app:layout_constraintStart_toEndOf="@+id/multiPlayersEasyScoreCounterForX"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/multiPlayersResetButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/reset_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_00"
+        android:layout_width="133dp"
+        android:layout_height="145dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="11dp"
+        android:background="@drawable/button"
+        android:textSize="60sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/multiPlayersEasyTurn" />
+
+    <Button
+        android:id="@+id/button_01"
+        android:layout_width="133dp"
+        android:layout_height="145dp"
+        android:layout_marginTop="11dp"
+        android:background="@drawable/button"
+        android:textSize="60sp"
+        app:layout_constraintEnd_toStartOf="@+id/button_02"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toEndOf="@+id/button_00"
+        app:layout_constraintTop_toBottomOf="@+id/multiPlayersEasyTurn" />
+
+    <Button
+        android:id="@+id/button_02"
+        android:layout_width="133dp"
+        android:layout_height="145dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="11dp"
+        android:background="@drawable/button"
+        android:textSize="60sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/multiPlayersEasyTurn" />
+
+    <Button
+        android:id="@+id/button_10"
+        android:layout_width="133dp"
+        android:layout_height="145dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/button"
+        android:textSize="60sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_00" />
+
+    <Button
+        android:id="@+id/button_11"
+        android:layout_width="133dp"
+        android:layout_height="145dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/button"
+        android:textSize="60sp"
+        app:layout_constraintEnd_toStartOf="@+id/button_12"
+        app:layout_constraintStart_toEndOf="@+id/button_10"
+        app:layout_constraintTop_toBottomOf="@+id/button_01" />
+
+    <Button
+        android:id="@+id/button_12"
+        android:layout_width="133dp"
+        android:layout_height="145dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/button"
+        android:textSize="60sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_02" />
+
+    <Button
+        android:id="@+id/button_20"
+        android:layout_width="133dp"
+        android:layout_height="145dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/button"
+        android:textSize="60sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_10" />
+
+    <Button
+        android:id="@+id/button_21"
+        android:layout_width="133dp"
+        android:layout_height="145dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/button"
+        android:textSize="60sp"
+        app:layout_constraintEnd_toStartOf="@+id/button_22"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toEndOf="@+id/button_20"
+        app:layout_constraintTop_toBottomOf="@+id/button_11" />
+
+    <Button
+        android:id="@+id/button_22"
+        android:layout_width="133dp"
+        android:layout_height="145dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/button"
+        android:textSize="60sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_12" />
+
+</android.support.constraint.ConstraintLayout>

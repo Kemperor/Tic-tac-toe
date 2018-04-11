@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Tic-tac-toe</string>
+    <string name="play_clicked">Play</string>
+    <string name="exit_clicked">Exit</string>
+    <string name="single_player_clicked">Single Player</string>
+    <string name="multi_players_clicked">Multi Players</string>
+    <string name="single_easy_clicked">Easy</string>
+    <string name="single_hard_clicked">Hard</string>
+    <string name="multi_easy_clicked">Easy</string>
+    <string name="multi_hard_clicked">Hard</string>
+    <string name="multiPlayersEasyTurn">X turn</string>
+    <string name="draw_game">Draw</string>
+    <string name="x_wins">X win</string>
+    <string name="o_wins">O win</string>
+    <string name="x_turn">X Turn</string>
+    <string name="o_turn">O Turn</string>
+    <string name="you_win">You Win</string>
+    <string name="computer_win">Computer Win</string>
+    <string name="btnEasy">Easy</string>
+    <string name="btnNormal">Normal</string>
+    <string name="btnHard">Hard</string>
+    <string name="btnImpossible">Impossible</string>
+    <string name="difficulty">Select Difficulty</string>
+
+</resources>
